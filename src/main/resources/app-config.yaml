@@ -1,0 +1,15 @@
+server:
+  type: simple
+  applicationContextPath: /
+  adminContextPath: /admin
+  connector:
+    type: http
+    port: 8080
+
+logging:
+  level: INFO
+  loggers:
+    io.dropwizard: INFO
+  appenders:
+    - type: console
+      logFormat: '[%d{ISO8601}] %-5level [%thread] %logger{15} - %msg%n'

@@ -1,3 +1,5 @@
+homepageAbsoluteUrl: ${homepageAbsoluteUrl:-http://localhost:3000/}
+
 server:
   type: simple
   applicationContextPath: /

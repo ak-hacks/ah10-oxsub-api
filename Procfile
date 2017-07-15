@@ -1,1 +1,1 @@
-web: java -jar target/oxsub-api-1.0-SNAPSHOT.jar -Ddw.server.connector.port=$PORT  server target/classes/app-config.yaml
+web: java -Ddw.server.connector.port=$PORT -jar target/oxsub-api-1.0-SNAPSHOT.jar server target/classes/app-config.yaml

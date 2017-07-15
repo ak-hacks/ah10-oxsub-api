@@ -25,13 +25,13 @@ public class OutingsResource {
 
     private List<Outing> getDemoOutings() {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm");
-        Outing outing1 = new Outing(UUID.randomUUID(), "Christ Church M2", SubType.ROWER, dateFormat.format(new Date()));
-        Outing outing2 = new Outing(UUID.randomUUID(), "St Johns W1", SubType.ROWER, dateFormat.format(new Date()));
-        Outing outing3 = new Outing(UUID.randomUUID(), "Catz M3", SubType.BOWSIDEROWER, dateFormat.format(new Date()));
-        Outing outing4 = new Outing(UUID.randomUUID(), "Balliol W2", SubType.ROWER, dateFormat.format(new Date()));
-        Outing outing5 = new Outing(UUID.randomUUID(), "Trinity M2", SubType.STOKESIDEROWER, dateFormat.format(new Date()));
-        Outing outing6 = new Outing(UUID.randomUUID(), "Christ Church W2", SubType.SSTATUSCOX, dateFormat.format(new Date()));
-        Outing outing7 = new Outing(UUID.randomUUID(), "Worcester W1", SubType.COX, dateFormat.format(new Date()));
+        Outing outing1 = new Outing(UUID.randomUUID(), "Christ Church M2", SubType.ROWER.getValue(), dateFormat.format(new Date()));
+        Outing outing2 = new Outing(UUID.randomUUID(), "St Johns W1", SubType.ROWER.getValue(), dateFormat.format(new Date()));
+        Outing outing3 = new Outing(UUID.randomUUID(), "Catz M3", SubType.BOWSIDEROWER.getValue(), dateFormat.format(new Date()));
+        Outing outing4 = new Outing(UUID.randomUUID(), "Balliol W2", SubType.ROWER.getValue(), dateFormat.format(new Date()));
+        Outing outing5 = new Outing(UUID.randomUUID(), "Trinity M2", SubType.STOKESIDEROWER.getValue(), dateFormat.format(new Date()));
+        Outing outing6 = new Outing(UUID.randomUUID(), "Christ Church W2", SubType.SSTATUSCOX.getValue(), dateFormat.format(new Date()));
+        Outing outing7 = new Outing(UUID.randomUUID(), "Worcester W1", SubType.COX.getValue(), dateFormat.format(new Date()));
 
         List<Outing> outings = new ArrayList<>();
         outings.add(outing1);

@@ -1,15 +1,16 @@
 package com.beancrunch.oxsub.domain;
 
+import java.util.Date;
 import java.util.UUID;
 
 public class Outing {
 
     private final UUID uuid;
     private final String crew;
-    private final SubType subRequired;
+    private final String subRequired;
     private final String date;
 
-    public Outing(UUID uuid, String crew, SubType subRequired, String date) {
+    public Outing(UUID uuid, String crew, String subRequired, String date) {
         this.uuid = uuid;
         this.crew = crew;
         this.subRequired = subRequired;
@@ -24,7 +25,7 @@ public class Outing {
         return crew;
     }
 
-    public SubType getSubRequired() {
+    public String getSubRequired() {
         return subRequired;
     }
 
